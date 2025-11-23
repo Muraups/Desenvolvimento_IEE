@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Calculadora IEEE 754 - 32 bits</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Calculadora IEEE 754 (float32)</h1>
+
+  <div class="grid">
+    <div class="box">
+      <label>Valor (decimal)</label>
+      <div class="row">
+        <input id="input-value" type="text" placeholder="Ex: 3.14159" />
+        <button id="btn-convert">Converter</button>
+      </div>
+      <small>Bits:</small>
+      <pre id="bits-output">—</pre>
+      <small>Explicação:</small>
+      <pre id="explain-output">—</pre>
+    </div>
+
+    <div class="box">
+      <label>Bits (32 bits)</label>
+      <div class="row">
+        <input id="input-bits" type="text" placeholder="Ex: 01000001..." />
+        <button id="btn-bits-to-dec">Para Decimal</button>
+      </div>
+      <small>Decimal:</small>
+      <pre id="dec-output">—</pre>
+    </div>
+  </div>
+
+  <hr />
+
+  <h2>Operações (simula float32)</h2>
+  <div class="row">
+    <input id="op-a" type="text" placeholder="A" />
+    <select id="operation">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">×</option>
+      <option value="/">÷</option>
+    </select>
+    <input id="op-b" type="text" placeholder="B" />
+    <button id="btn-op">=</button>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <small>Resultado (double):</small>
+      <pre id="result-double">—</pre>
+    </div>
+    <div class="col">
+      <small>Resultado (float32):</small>
+      <pre id="result-f32">—</pre>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
